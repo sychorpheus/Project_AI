@@ -6,6 +6,7 @@ class Neuron:
         self.bias = bias
         self.function = function
 
+
     def forward(self, inputs):
         logit = np.dot(inputs, self.weights) + self.bias
         output = self.function(logit)
